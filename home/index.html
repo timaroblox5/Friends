@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends V4</title>
+    <link rel="stylesheet" href="/assect/styles/all.css">
+</head>
+<body>
+    <header>
+        <h1>Friends V4</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Форум</a></li>
+                <li><a href="https://discord.com/api/oauth2/authorize?client_id=1169683156039909448&response_type=code&redirect_uri=file%3A%2F%2F%2FC%3A%2FUsers%2FTimaB%2FOneDrive%2FDocuments%2FFriends%2520V4%2520Website%2Fhome%2Findex.html&scope=identify+guilds">через вод Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <p>&copy; 2024 Friends V4. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Предположим, что у пользователя есть переменная isAuthenticated, которая указывает, авторизован он или нет
+        const isAuthenticated = true; // Пример авторизации, замените на вашу реализацию
+
+        // Функция для обновления навигационного меню в зависимости от статуса авторизации
+        function updateNavigationMenu() {
+            const profileLink = document.createElement('li');
+            const profileAnchor = document.createElement('a');
+            profileAnchor.href = "#"; // Здесь нужно указать ссылку на страницу профиля пользователя
+            profileAnchor.textContent = "Профиль";
+            profileLink.appendChild(profileAnchor);
+
+            const navList = document.querySelector('nav ul');
+            navList.appendChild(profileLink);
+        }
+
+        // Проверяем статус авторизации и обновляем навигационное меню
+        if (isAuthenticated) {
+            updateNavigationMenu();
+        }
+    </script>
+</body>
+</html>
