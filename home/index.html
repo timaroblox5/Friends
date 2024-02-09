@@ -1,48 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends V4</title>
-    <link rel="stylesheet" href="/assect/styles/all.css">
+    <title>Friends v4</title>
 </head>
 <body>
-    <header>
-        <h1>Friends V4</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Форум</a></li>
-                <li><a href="https://discord.com/api/oauth2/authorize?client_id=1169683156039909448&response_type=code&redirect_uri=https%3A%2F%2Ftimaroblox5.github.io%2FFriends-V4%2Fprofile%2Findex.html&scope=identify">через вод Discord</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <p>&copy; 2024 Friends V4. Все права защищены.</p>
-    </footer>
-
-    <script>
-        // Предположим, что у пользователя есть переменная isAuthenticated, которая указывает, авторизован он или нет
-        const isAuthenticated = true; // Пример авторизации, замените на вашу реализацию
-
-        // Функция для обновления навигационного меню в зависимости от статуса авторизации
-        function updateNavigationMenu() {
-            const profileLink = document.createElement('li');
-            const profileAnchor = document.createElement('a');
-            profileAnchor.href = "#"; // Здесь нужно указать ссылку на страницу профиля пользователя
-            profileAnchor.textContent = "Профиль";
-            profileLink.appendChild(profileAnchor);
-
-            const navList = document.querySelector('nav ul');
-            navList.appendChild(profileLink);
-        }
-
-        // Проверяем статус авторизации и обновляем навигационное меню
-        if (isAuthenticated) {
-            updateNavigationMenu();
-        }
-    </script>
+    <h1>Welcome to Friends v4!</h1>
+    <p>Join our Discord server and like it!</p>
+    <a href="https://discordserver.info/1172849996081659934/like" id="widgets_like_btn" onClick="like(this); return false;">Like the Server</a>
+    <script src="https://discordserver.info/like.js"></script>
+    <p>Embed of our Discord server:</p>
+    <iframe src="https://discord.com/widget?id=1172849996081659934&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </body>
 </html>
